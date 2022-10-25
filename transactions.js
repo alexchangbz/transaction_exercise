@@ -48,7 +48,6 @@ const generateInvoice = (dataTrans, dataSlip, dataShop) => {
 
         dataTrans.map((tran) => {
           slipID.map((slip) => {
-            let tranArr
             if (tran.id === slip) {
               if(tran.payout) {
                 amount = amount - tran.amount
